@@ -31,3 +31,52 @@
             filter_list([1,'a','b',0,15]) == [1,0,15]
             filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
 */
+
+function romanNumber ( string ) {
+   var num ={ X:10 , V:5 ,I:1,L:50,C:100,D:500,M:1000 }
+       result=0;
+for( var i=0; i<string.length; i++){
+   result =result + num.string[i]        
+}
+
+return result;
+}
+
+function dash ( str){
+  var arr=[];
+  var string="";
+  var word="";
+    for ( var i = 0 ; i<str.length ; i++){
+
+        if (str[i]==="-"){
+        string=string+" "
+        
+        }string=string+str[i];
+    }
+    arr= string.split(" ")
+   
+    for (var j=0; j<arr.length; j++){
+
+        word=word+arr[j]
+    }
+
+    return word
+
+
+}
+
+function filter_list (array){
+
+    var arr =[];
+   var j=0;
+    for ( var i =0; i<array.length ; i++) {
+
+        if (typeof(array[i])==="number"){
+
+            arr[j]=array[i]
+            j=j+1
+        }
+       
+    }
+    return arr
+}
