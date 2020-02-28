@@ -4,3 +4,19 @@
 //
 //
 // Note : you can`t use any built-in functions .
+
+function reverse ( string ){
+var array=[]
+ arr= string.split("");  // we use split to put all the words of the string into a new array
+word=""
+for ( var i= arr.length-1 ; i>=0 ;i--) {
+
+    array.push(arr[i])
+}
+
+for ( var j=0 ; j< array.length; j++){
+
+    word= word+array[j]
+}
+  return word
+}
