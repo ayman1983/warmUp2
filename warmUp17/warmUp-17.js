@@ -44,17 +44,17 @@ Technical Details
       
       
 
-    // while( j<=number)
-    // for ( i =0 ; i<string.length; i++){
+    while( j<=number)
+    for ( i =0 ; i<string.length; i++){
            
-    //     if (str[i]==='1'){
-    //        arr[j]=str[i]+str[i+1];
-    //        j=j+1
-    //     }
+        if (str[i]==='1'){
+           arr[j]=str[i]+str[i+1];
+           j=j+1
+        }
 
-    //     else {
-    //           arr[j]=str[i]
-    //           j=j+1
+        else {
+              arr[j]=str[i]
+              j=j+1
     }
 
     }

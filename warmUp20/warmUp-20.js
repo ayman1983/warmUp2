@@ -7,7 +7,7 @@
 
 function reverse ( string ){
 var array=[]
- arr= string.split("");  // we use split to put all the words of the string into a new array
+ arr= string.split(" ");  // we use split to put all the words of the string into a new array
 word=""
 for ( var i= arr.length-1 ; i>=0 ;i--) {
 
@@ -16,7 +16,7 @@ for ( var i= arr.length-1 ; i>=0 ;i--) {
 
 for ( var j=0 ; j< array.length; j++){
 
-    word= word+array[j]
+    word= word+" "+array[j]
 }
   return word
 }

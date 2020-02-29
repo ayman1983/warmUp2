@@ -16,3 +16,30 @@
 // Constraints:
 // 1 <= text.length <= 10^4
 // text consists of lower case English letters only.
+
+
+function ball (string) {
+
+    var kb =0
+    var ka=0;
+    var kl=0;
+    var ko=0;
+    var kn=0;
+    for ( var i= 0; i<string.length; i++) {
+     if (string[i]==="b"){
+         kb=kb+1
+     } else if( string[i]==="a"){
+         ka=ka+1
+       }else if ( string[i]==="l"){
+           kl=kl+1
+          }else if (string[i]==="o"){
+              ko=ko+1
+          }else if (string[i]==="n"){
+              kn=kn+1
+          }
+
+    }
+    if ((kl>=2*(Math.min(ka,kn,kb)))&&(ko>=2*(Math.min(ka,kn,kb)))&&(ka>=1)&&(kb>=1)&&(kn>=1)){
+        return Math.min(ka,kn,kb);
+    } else return 0;
+}
